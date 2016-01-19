@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="angular.min.js"></script>
+	<script src="script.js"></script>
+	<title>My Own Angular JS Practice Page</title>
+</head>
+<body ng-app="myApp">
+
+<div ng-controller="namesCtrl">
+	<h1>{{message}}</h1>
+</div>
+
+<div ng-controller="myOwnCtrl">
+	{{DateToday|date:'medium'}}
+</div>
+
+<div ng-controller="addingHardCode">
+	5+6={{a+b}}
+</div>
+Now Your Turn to add:
+<div>
+	Value #1:<input type="number" ng-model="c" ng-value="integer" title="Value 1">
+	<br>
+	Value #2:<input type="number" ng-model="d" ng-value="integer" title="Value 2">
+	<Br>
+	{{c}} + {{d}} = {{c+d}}{{period}}
+</div>
+
+<div>
+	<button onclick="window.location='index.html'">Exit</button>
+</div>
+
+</body>
+</html>
